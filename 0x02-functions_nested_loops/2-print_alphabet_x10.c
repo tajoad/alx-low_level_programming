@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * add - add two numbers from input
- * @a: first aparamet
- * @b: second parameter
- *
- * Description: adds two numbers
- * Return: Always (0).
+ * print_alphabet_x10 - Check holberton
+ * Description: function uses _putchar function to print
+ * alphabet in lowercase 10 times
+ * Return: Nothing.
  */
 
-int add(int a, int b)
+void print_alphabet_x10(void)
 {
-	return (a + b);
+  char i;
+  int j;
+
+  for (j = 0; j < 10; j++)
+    {
+      for (i = 'a'; i <= 'z'; i++)
+	_putchar(i);
+      _putchar('\n');
+    }
 }
