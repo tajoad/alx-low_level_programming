@@ -1,13 +1,23 @@
 #include "main.h"
 
 /**
- * _isalpha - check for lower case letter
- * @c : character to check
- * Return:0 or 1
+ * print_rev - print a string in reverse
+ * @s: a string
+ *
+ * Return: string in reverse
  */
-
-int _isalpha(int c)
+void print_rev(char *s)
 {
-	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
+	int i = 0;
 
+	while (s[i] != 0)
+	{
+		i++;
+	}
+	while (i > 0)
+	{
+		i--;
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 }
